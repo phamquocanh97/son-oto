@@ -276,6 +276,7 @@ src="https://www.facebook.com/tr?id=427159172312914&ev=PageView&noscript=1"
                 response => response.json()
             ).then((html) => {
                 // you can put any JS code here
+                fbq('track', 'CompleteRegistration');
                 alert('Cảm ơn a/c đã đặt hàng , sẽ có nhân viên bên shop gọi xác nhận đơn cho mình . a/c vui lòng để ý điện thoại ạ ');
                 document.getElementById("sheetdb-form").reset();
             });
