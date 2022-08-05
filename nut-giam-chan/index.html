@@ -5,22 +5,32 @@
 
     <head>
         <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '382494780485268');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
+        <script>
+            ! function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '382494780485268');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=382494780485268&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+        <!-- End Meta Pixel Code -->
         <script>
             ! function(f, b, e, v, n, t, s) {
                 if (f.fbq) return;
@@ -4482,7 +4492,7 @@ src="https://www.facebook.com/tr?id=382494780485268&ev=PageView&noscript=1"
                     <div id="BOX200" class="ladi-element">
                         <div class="ladi-box"></div>
                     </div>
-                    <div id="FORM201" data-config-id="60a24d14baeb700074e58bd9" class="ladi-element">
+                    <div id="FORM201" class="ladi-element">
                         <form action="https://sheetdb.io/api/v1/q0gq94pgpiug8" method="post" id="sheetdb-form" autocomplete="off" method="post" class="ladi-form">
                             <div id="BUTTON202" class="ladi-element">
                                 <div class="ladi-button">
@@ -5015,7 +5025,7 @@ src="https://www.facebook.com/tr?id=382494780485268&ev=PageView&noscript=1"
                 ).then((html) => {
                     // you can put any JS code here
                     fbq('track', 'CompleteRegistration');
-                   
+
                     document.getElementById("sheetdb-form").reset();
                 });
             });
@@ -5032,7 +5042,7 @@ src="https://www.facebook.com/tr?id=382494780485268&ev=PageView&noscript=1"
                 ).then((html) => {
                     // you can put any JS code here
                     fbq('track', 'CompleteRegistration');
-                    
+
                     document.getElementById("sheetdb-form1").reset();
                 });
             });
