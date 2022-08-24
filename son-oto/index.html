@@ -466,6 +466,74 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Paytone One:bold,regular|Baloo Bhaina:bold,regular&amp;display=swap" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
 
     <style id="style_ladi" type="text/css">
+        /* general styling */
+        
+         :root {
+            --smaller: .75;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            align-items: center;
+            background-color: #ffd54f;
+            display: flex;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+        
+        .container {
+            color: #333;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            top: -550px;
+        }
+        
+        h1 {
+            font-weight: normal;
+            letter-spacing: .125rem;
+            text-transform: uppercase;
+        }
+        
+        li {
+            display: inline-block;
+            font-size: 1.5em;
+            list-style-type: none;
+            padding: 1em;
+            text-transform: uppercase;
+        }
+        
+        li span {
+            display: block;
+            font-size: 4.5rem;
+        }
+        
+        .emoji {
+            display: none;
+            padding: 1rem;
+        }
+        
+        .emoji span {
+            font-size: 4rem;
+            padding: 0 .5rem;
+        }
+        
+        @media all and (max-width: 768px) {
+            h1 {
+                font-size: calc(1.5rem * var(--smaller));
+            }
+            li {
+                font-size: calc(1.125rem * var(--smaller));
+            }
+            li span {
+                font-size: calc(3.375rem * var(--smaller));
+            }
+        }
+        
         a,
         abbr,
         acronym,
@@ -2709,7 +2777,7 @@
         }
         
         #SECTION5 {
-            height: 953.41px;
+            height: 1500.41px;
         }
         
         #SECTION5 .ladi-section-arrow-down {
@@ -3106,7 +3174,7 @@
         
         #LINE71 {
             width: 414px;
-            top: 350.91px;
+            top: 250.91px;
             left: 3px;
         }
         
@@ -3227,7 +3295,7 @@
         
         #HEADLINE101 {
             width: 385px;
-            top: 400.64px;
+            top: 270.64px;
             left: 0px;
         }
         
@@ -3837,7 +3905,7 @@
         #VIDEO203 {
             width: 377px;
             height: 298.688px;
-            top: -90.2px;
+            top: -200.2px;
             left: 20.5px;
         }
         
@@ -3861,9 +3929,54 @@
             fill: rgba(0, 0, 0, 0.5);
         }
         
+        #SECTION182 {
+            height: 478.705px;
+        }
+        
+        #SECTION182>.ladi-section-background {
+            background-color: rgb(238, 238, 238);
+        }
+        
+        #SECTION182 .ladi-section-arrow-down {
+            background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+        }
+        
+        #VIDEO183 {
+            width: 424.635px;
+            height: 420.25px;
+            top: -530.455px;
+            left: -2.3175px;
+        }
+        
+        #VIDEO183>.ladi-video>.ladi-video-background {
+            background-size: cover;
+            background-attachment: scroll;
+            background-origin: content-box;
+            background-image: url("https://img.youtube.com/vi/jZNdoyEfGWk/hqdefault.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        #SHAPE183 {
+            width: 60px;
+            height: 60px;
+            top: 180.125px;
+            left: 182.317px;
+        }
+        
+        #SHAPE183 svg:last-child {
+            fill: rgba(0, 0, 0, 0.5);
+        }
+        
+        #HEADLINE184 {
+            width: 420px;
+            top: -100px;
+            left: 0px;
+        }
+        
         #HEADLINE204 {
             width: 321px;
-            top: -250.2px;
+            top: -280.2px;
             left: 49.5345px;
         }
         
@@ -3893,7 +4006,7 @@
         #BUTTON206 {
             width: 175.31px;
             height: 54.6554px;
-            top: 250.872px;
+            top: 150.872px;
             left: 121.345px;
         }
         
@@ -4239,6 +4352,21 @@
             line-height: 1.6;
         }
         
+        #HEADLINE264 {
+            width: 387px;
+            top: 800.97px;
+            left: 27px;
+        }
+        
+        #HEADLINE264>.ladi-headline {
+            font-family: "Baloo Bhaina", cursive;
+            color: rgb(199, 75, 22);
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
         #LIST_PARAGRAPH269 {
             width: 420px;
             top: 1203.75px;
@@ -4347,7 +4475,7 @@
         
         #FORM_ITEM138 {
             width: 370px;
-            height: 91px;
+            height: 150px;
             top: 270.131px;
             left: 0px;
         }
@@ -4426,7 +4554,7 @@
         #BUTTON133 {
             width: 264.93px;
             height: 62.8778px;
-            top: 370.122px;
+            top: 430.122px;
             left: 52.535px;
         }
         
@@ -4509,7 +4637,7 @@
         }
         
         #SECTION82 {
-            height: 600.41px;
+            height: 660.41px;
         }
         
         #SECTION82>.ladi-section-background {
@@ -4528,6 +4656,7 @@
         .QLKH {
             position: relative;
             left: 10px;
+            top: -160px;
         }
     </style>
 
@@ -4548,7 +4677,7 @@
                     </div>
                 </div>
                 <div id="HEADLINE11" class="ladi-element ladi-animation">
-                    <h3 class="ladi-headline">250.000</h3>
+                    <h3 class="ladi-headline">350.000</h3>
                 </div>
                 <div data-action="true" id="BUTTON12" class="ladi-element">
                     <div class="ladi-button">
@@ -4606,7 +4735,7 @@
                     <h3 class="ladi-headline">GIÁ CHỈ&nbsp;</h3>
                 </div>
                 <div id="HEADLINE30" class="ladi-element ladi-animation">
-                    <h3 class="ladi-headline">250.000 Đ</h3>
+                    <h3 class="ladi-headline">350.000 Đ</h3>
                 </div>
                 <div id="HEADLINE32" class="ladi-element">
                     <h3 class="ladi-headline">(Tiết kiệm 100.000vnđ so với giá niêm yết)</h3>
@@ -4764,10 +4893,11 @@
                 <div id="HEADLINE80" class="ladi-element">
                     <h3 class="ladi-headline">Bảo vệ đồ vật không bị nứt nẻ, han rỉ, ăn mòn tự nhiền nhờ 5 lớp sơn bền bỉ</h3>
                 </div>
+
+                <div id="HEADLINE101" class="ladi-element">
+                    <h3 class="ladi-headline">QUYỀN LỢI KHÁCH HÀNG</h3>
+                </div>
                 <div class="QLKH">
-                    <div id="HEADLINE101" class="ladi-element">
-                        <h3 class="ladi-headline">QUYỀN LỢI KHÁCH HÀNG</h3>
-                    </div>
                     <div id="BOX103" class="ladi-element">
                         <div class="ladi-box"></div>
                     </div>
@@ -4838,6 +4968,43 @@
                     <h3 class="ladi-headline">XỊT XONG PHƠI KHÔ</h3>
                 </div>
             </div>
+            <div id="HEADLINE264" class="ladi-element">
+                <h3 class="ladi-headline">Khuyến mãi đặc biệt tri ân khách hàng đã tin tưởng và sử dụng trong thời gian qua</h3>
+                <h3 class="ladi-headline">Tặng ngay <mark>5 nút giảm lực đóng</mark> ô tô khi mua sản phẩm(Sản phẩm tặng kèm không tính vào tiền sơn)</h3>
+            </div>
+            <div id="SECTION182" class="ladi-section">
+                <div class="ladi-section-background"></div>
+                <div class="ladi-container">
+                    <div id="VIDEO183" class="ladi-element">
+                        <div class="ladi-video">
+                            <div class="ladi-video-background"></div>
+                            <div id="SHAPE183" class="ladi-element">
+                                <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 408.7 408.7" fill="rgba(0, 0, 0, 0.5)"><polygon fill="#fff" points="163.5 296.3 286.1 204.3 163.5 112.4 163.5 296.3"></polygon><path d="M204.3,0C91.5,0,0,91.5,0,204.3S91.5,408.7,204.3,408.7s204.3-91.5,204.3-204.3S316.7,0,204.3,0ZM163.5,296.3V112.4l122.6,91.9Z" transform="translate(0 0)"></path></svg></div>
+                            </div><iframe id="VIDEO183_player" class="iframe-video-preload" data-video-type="youtube" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen="1" title="Nút giảm lực đóng cửa xe ô tô" width="640" height="360" src="https://www.youtube.com/embed/jZNdoyEfGWk?rel=0&amp;modestbranding=0&amp;playsinline=1&amp;controls=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.muahang.fun&amp;widgetid=1"></iframe></div>
+                    </div>
+                    <div id="HEADLINE184" class="ladi-element">
+                        <h3 class="ladi-headline">Video Hướng Dẫn Lắp Đặt</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 id="headline">Khuyến mãi còn lại: </h1>
+                <div id="countdown">
+                    <ul>
+                        <li><span id="days"></span>Ngày</li>
+                        <li><span id="hours"></span>Giờ</li>
+                        <li><span id="minutes"></span>Phút</li>
+                        <li><span id="seconds"></span>Giây</li>
+                    </ul>
+                </div>
+                <div id="content" class="emoji">
+                    <span>🥳</span>
+                    <span>🎉</span>
+                    <span>🎂</span>
+                </div>
+            </div>
+
         </div>
 
         <div id="SECTION82" class="ladi-section">
@@ -4846,11 +5013,12 @@
                 <div id="BOX117" class="ladi-element">
                     <div class="ladi-box"></div>
                 </div>
+
                 <div id="HEADLINE129" class="ladi-element">
                     <h3 class="ladi-headline">GIÁ CHỈ&nbsp;</h3>
                 </div>
                 <div id="HEADLINE130" class="ladi-element ladi-animation">
-                    <h3 class="ladi-headline">250.000 Đ</h3>
+                    <h3 class="ladi-headline">350.000 Đ</h3>
                 </div>
                 <div id="FORM132" class="ladi-element">
                     <form action="https://sheetdb.io/api/v1/q0gq94pgpiug8" method="post" id="sheetdb-form" class="ladi-form">
@@ -4892,8 +5060,8 @@
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item-background"></div>
                                 <div class="ladi-form-item ladi-form-checkbox ladi-form-checkbox-vertical">
-                                    <div class="ladi-form-checkbox-item"><input id="vehicle1" name="data[Ghi chú]" type="checkbox" value="👉250k +Miễn Ship 1 lọ"><span data-checked="true">👉250k +Miễn Ship 1 lọ</span></div>
-                                    <div class="ladi-form-checkbox-item"><input id="vehicle2" name="data[Ghi chú]" type="checkbox" value="👉450k + Miễn ship (2 lọ)"><span data-checked="false">👉450k + Miễn ship (2 lọ)</span></div>
+                                    <div class="ladi-form-checkbox-item"><input id="vehicle1" name="data[Ghi chú]" type="checkbox" value="👉250k +Miễn Ship 1 lọ"><span data-checked="true">👉350k +Miễn Ship (tặng 10 nút giảm chấn ô-tô)</span></div>
+                                    <div class="ladi-form-checkbox-item"><input id="vehicle2" name="data[Ghi chú]" type="checkbox" value="👉450k + Miễn ship (2 lọ)"><span data-checked="false">👉650k + Miễn ship (tặng 10 nút giảm chấn ô-tô)</span></div>
                                 </div>
                             </div>
                         </div><button id="purchase" value="CompleteRegistration" type="submit" class="ladi-hidden"></button></form>
@@ -5075,6 +5243,51 @@
                 document.getElementById("sheetdb-form").reset();
             });
         });
+    </script>
+    <script>
+        (function() {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "08/30/",
+                birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
+
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function() {
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)) + ":",
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)) + ":",
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)) + ":",
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        document.getElementById("headline").innerText = "It's my birthday!";
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                        clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+        }());
     </script>
     <script id="script_lazyload" type="text/javascript">
         (function() {
