@@ -466,6 +466,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Paytone One:bold,regular|Baloo Bhaina:bold,regular&amp;display=swap" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
 
     <style id="style_ladi" type="text/css">
+        .popup {
+            display: none;
+            position: fixed;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            max-width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .popup-content {
+            position: relative;
+            background-color: #FAFAFA;
+            padding: 15px;
+            margin: auto;
+            max-width: 100%;
+        }
+        
+        .popup-content img {
+            max-width: 100%;
+        }
+        
+        .close-btn {
+            top: -150px;
+            color: #2E2E2E;
+            font-size: 25px;
+            padding-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .close-btn:hover {
+            color: #D2D2D2;
+        }
+        
         a,
         abbr,
         acronym,
@@ -4456,6 +4492,39 @@
             line-height: 1.6;
         }
         
+        #BUTTON134 {
+            width: 264.93px;
+            height: 62.8778px;
+            top: 450.122px;
+            left: 52.535px;
+        }
+        
+        #BUTTON134>.ladi-button>.ladi-button-background {
+            background: rgba(232, 104, 48, 1);
+            background: -webkit-linear-gradient(180deg, rgba(232, 104, 48, 1), rgba(145, 55, 16, 1));
+            background: linear-gradient(180deg, rgba(232, 104, 48, 1), rgba(145, 55, 16, 1));
+        }
+        
+        #BUTTON134>.ladi-button {
+            box-shadow: 0px 15px 20px -15px #000;
+            -webkit-box-shadow: 0px 15px 20px -15px #000;
+            border-radius: 10px;
+        }
+        
+        #BUTTON_TEXT134 {
+            width: 265px;
+            top: 30.4633px;
+            left: 0px;
+        }
+        
+        #BUTTON_TEXT134>.ladi-headline {
+            color: rgb(255, 255, 255);
+            font-size: 21px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
         #HEADLINE130 {
             width: 211px;
             top: 98.23px;
@@ -4509,7 +4578,7 @@
         }
         
         #SECTION82 {
-            height: 600.41px;
+            height: 700.41px;
         }
         
         #SECTION82>.ladi-section-background {
@@ -4862,6 +4931,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div id="FORM_ITEM135" class="ladi-element">
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item-background"></div>
@@ -4897,6 +4967,14 @@
                                 </div>
                             </div>
                         </div><button id="purchase" value="CompleteRegistration" type="submit" class="ladi-hidden"></button></form>
+                    <div id="BUTTON134" class="ladi-element">
+                        <div class="ladi-button">
+                            <div class="ladi-button-background"></div>
+                            <div id="BUTTON_TEXT134" class="ladi-element">
+                                <p class="ladi-headline">XEM BẢNG MÀU&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="SHAPE139" class="ladi-element">
                     <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 409.03 150.2" class="" fill="url(&quot;#SHAPE139_mobile_gradient&quot;)"><defs id="SHAPE139_defs"><linearGradient id="SHAPE139_mobile_gradient" gradientTransform="rotate(0)"><stop offset="0%" stop-color="rgba(232, 104, 48, 1)"></stop><stop offset="100%" stop-color="rgba(232, 226, 48, 1)"></stop></linearGradient></defs><polygon points="0 27.31 18 148.96 368.06 150.21 409.03 0 0 27.31"></polygon></svg></div>
@@ -4917,6 +4995,28 @@
                         <div class="ladi-image-background"></div>
                     </div>
                 </div>
+                <div id="popup-btn" class="ladi-element">
+                    <div class="ladi-button">
+                        <div class="ladi-button-background"></div>
+                        <div id="BUTTON_TEXT134" class="ladi-element">
+                            <p class="ladi-headline"> Xem Bảng Màu&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn"> <button>Đóng</button></span>
+                        <img src="../img/Untitled.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <span class="close-btn"> <button>Đóng</button></span>
+                <img src="https://lbm.vn/wp-content/uploads/2013/02/roi-tri-01.jpg">
             </div>
         </div>
         <div id="SECTION131" class="ladi-section">
@@ -5059,6 +5159,25 @@
     <div id="backdrop-popup" class="backdrop-popup"></div>
     <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
+    <script>
+        let modalBtn = document.getElementById("BUTTON134");
+        let modal = document.querySelector(".popup");
+        let closeBtn = document.querySelector(".close-btn");
+        // Hiển thị popup khi nhấp chuột vào button
+        modalBtn.onclick = function() {
+                modal.style.display = "block"
+            }
+            // Đóng popup khi ấn vào nút đóng
+        closeBtn.onclick = function() {
+                modal.style.display = "none"
+            }
+            // Đóng khi nhấp chuột vào bất cứ khu vực nào trên màn hình
+        window.onclick = function(e) {
+            if (e.target == modal) {
+                modal.style.display = "none"
+            }
+        }
+    </script>
     <script>
         var form = document.getElementById('sheetdb-form');
         form.addEventListener("submit", e => {
